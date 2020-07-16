@@ -16,11 +16,4 @@ class FragmentAdapter(fm: FragmentManager, behavior: Int) : FragmentPagerAdapter
         return fragmentList.size
     }
 
-    override fun getPageTitle(position: Int): CharSequence? {
-        return when (position) {
-            0 -> "홈"
-            1 -> "내정보"
-            else -> "커뮤니티"
-        }
-    }
 }
